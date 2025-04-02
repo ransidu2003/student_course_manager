@@ -2,26 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel ="stylesheet" href="login.css">
+    <title>Login - Uni Enroll</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;700&display=swap">
 </head>
 <body>
+<header class="header-container">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="button-container">
+        <a href="login.html"><button class="login-btn">Sign in</button></a>
+        <div class="user-icon-container">
+            <a href="signup.html"><i class="fas fa-user user-icon"></i></a>
+        </div>
+    </div>
+</header>
+
 <div class="login-container">
     <h2>Login</h2>
     <form>
         <div class="input-group">
-            <label for="username">Student ID</label>
-            <input type="text" id="username" name="username" required>
+            <label for="username">User Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Student ID" required>
         </div>
         <div class="input-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
         </div>
         <button type="submit" class="login-btn">Login</button>
     </form>
+    <div class="signup-link">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
 </div>
-<div class="signup-link">
-    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-</div>
+
+<footer>
+    &copy; 2025 U Academy Sri Lanka. All rights reserved.
+</footer>
 </body>
 </html>
