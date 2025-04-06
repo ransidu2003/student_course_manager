@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for a Course</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<header class="header-container">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="register-container">
+    <h2>Register for a Course</h2>
+    <form action="submit_registration.php" method="post">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="computer-science">Computer Science</option>
+            <option value="biotechnology">Biotechnology</option>
+            <option value="business-management">Business Management</option>
+            <option value="design">Design</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    © 2025 U Academy Sri Lanka. All rights reserved.
+</footer>
+</body>
+</html>

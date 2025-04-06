@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+
+
+<header class="feedback-header-container">
+  <div class="feedback-logo">
+    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="feedback-form-container">
+  <h2 class="feedback-h2">We’d love your feedback!</h2>
+  <form>
+    <div class="feedback-form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name here" required>
+    </div>
+    <div class="feedback-form-group">
+      <label for="course">Your course :</label>
+      <input type="text" id="course" placeholder="Which course did you follow?" required>
+    </div>
+    <div class="feedback-form-group">
+      <label for="review">Your Review:</label>
+      <textarea id="review" placeholder="Tell us about your experience..." required></textarea>
+    </div>
+    <button type="submit">Submit Feedback</button>
+  </form>
+</div>
+
+<footer class="feedback-footer">
+  © 2025 U Academy Sri Lanka. All rights reserved.
+</footer>
+</body>
+</html>
