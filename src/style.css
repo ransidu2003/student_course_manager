@@ -181,8 +181,8 @@ nav ul li a:hover {
 }
 
 .service-item {
-    background-color: white;
-    padding: 20px;
+    background-color: #cfdbdb;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -193,23 +193,52 @@ nav ul li a:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #004080;
+    color: #1c4645;
     margin-bottom: 10px;
 }
 
 .service-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #004080;
-    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    padding: 7px 9px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .service-button:hover {
-    background-color: #002060;
+    background-color: #F58711;
+    color: black;
+    text-shadow: 0px 0px 10px #FCA311;
+    box-shadow: 0 0 15px #e37a0a;
+    border: 2px solid #ff6500;
+}
+
+.contact-section {
+    padding: 10px 20px;
+    background-color: #85a19f;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 footer {
@@ -305,4 +334,406 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/*program page */
+
+
+/* Programs Section */
+.programs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #cfdbdb;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.programs-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #1C4645;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.program {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 22px;
+    flex: 0 0 auto;
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.program img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.program h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #1C4645;
+}
+
+.program p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Program Details Section */
+.program-details-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.program-detail {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.program-detail:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.program-detail h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1C4645;
+    text-align: center;
+}
+
+.program-detail p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.program-detail p strong {
+    color: #FCA311;
+    font-weight: 700;
+}
+
+.program-detail ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.program-detail ul li {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.program-detail ul li:before {
+    content: "\f058"; /* Font Awesome circle-check icon */
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    color: #FCA311;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.program-enroll-button {
+
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    padding: 7px 9px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.program-enroll-button:hover {
+    background-color: #F58711;
+    color: black;
+    text-shadow: 0px 0px 10px #FCA311;
+    box-shadow: 0 0 15px #e37a0a;
+    border: 2px solid #ff6500;
+}
+
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1C4645;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/*login page*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1C4645;
+}
+
+.header-container .logo img {
+    height: 50px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #FCA311;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.user-icon-container {
+    margin-left: 15px;
+}
+
+.user-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto ;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 8px;
+    border-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #1C4645;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #1C4645;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #1C4645;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1C4645;
+    color: white;
+    font-size: 1rem;
+}
+
+/*sing up page*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1C4645;
+}
+
+.header-container .logo img {
+    height: 50px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #FCA311;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.login-btn:hover {
+    background-color: #F58711;
+    color: black;
+    text-shadow: 0px 0px 10px #FCA311;
+    box-shadow: 0 0 15px #e37a0a;
+    border: 2px solid #ff6500;
+}
+
+.user-icon-container {
+    margin-left: 15px;
+}
+
+.user-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+    color: #1C4645;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    background-color: #1C4645;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.signup-btn:hover {
+    background-color: #F58711;
+    color: black;
+    text-shadow: 0px 0px 10px #FCA311;
+    box-shadow: 0 0 15px #e37a0a;
+    border: 2px solid #ff6500;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1C4645;
+    color: white;
+    font-size: 1rem;
 }
